@@ -32,7 +32,7 @@ public:
 	{
 		EnemyState &enemyState = reinterpret_cast<EnemyState &>(enemyBaseState);
 		sf::Vector2f newposition = enemyState.position;
-		if (newposition.y == 50)
+		if (newposition.y == 50)								// przesuwanie bossa na srodek przy wylosowaniu gory
 			newposition.y = 40;
 		else
 			newposition.y -= 160;

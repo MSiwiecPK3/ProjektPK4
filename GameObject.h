@@ -37,7 +37,7 @@ class BaseGameObject
 
 typedef std::tuple<std::string, std::shared_ptr<BaseGameObject>> GameObjectListPair;  // definicja GameObjectListPair
 
-class GameState 
+class GameState		// operuje na gameobjectch
 {
         std::list<GameObjectListPair> gameObjects;
         sf::RenderWindow *renderer;
@@ -73,10 +73,10 @@ class Component : public BaseComponent
 };
 
 template <typename StateT>
-class GameObject : public BaseGameObject
+class GameObject : public BaseGameObject		// "wszystko" jest game objectem z innymi komponentami
 {
         StateT state; 
-        std::map<std::string, std::unique_ptr<BaseComponent>> components; //mapka componentów
+        std::map<std::string, std::unique_ptr<BaseComponent>> components; //mapa componentów
             
     public:
         StateT &getState() { return state; }

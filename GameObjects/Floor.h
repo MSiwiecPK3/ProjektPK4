@@ -11,7 +11,7 @@ struct FloorState : public BaseState
     sf::IntRect textureRect = { 0, 0, 800, 100 };
 };
 
-class FloorGraphicsComponent : public Component<FloorState> //component jest template
+class FloorGraphicsComponent : public Component<FloorState> 
 {
         sf::Texture texture;
         sf::Sprite sprite;
@@ -29,7 +29,7 @@ class FloorGraphicsComponent : public Component<FloorState> //component jest tem
         void update(BaseState &floorStateBase, GameState &gameState)
         {
             FloorState &floorState = reinterpret_cast<FloorState &>(floorStateBase);
-            floorState.textureRect.left = floorState.textureRect.left + 1;
+            floorState.textureRect.left = floorState.textureRect.left + 1;		//ciagle tworzenie tekstury
 
             sprite.setTextureRect(floorState.textureRect);
 

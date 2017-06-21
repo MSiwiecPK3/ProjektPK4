@@ -39,7 +39,7 @@
 
     std::vector<std::shared_ptr<BaseGameObject>> State::getGameObjectsByTag(std::string tag)
     {
-        std::vector<std::shared_ptr<BaseGameObject>> result; //vectorek
+        std::vector<std::shared_ptr<BaseGameObject>> result; //vector
 
         for (auto &pair : gameObjects) {
             auto pairTag = std::get<0>(pair);
@@ -86,7 +86,7 @@
 
 // ======================
 
-    PlayingGameState::PlayingGameState(sf::Time tickDelta, std::shared_ptr<EventQueue> eventQueue) :
+    PlayingGameState::PlayingGameState(sf::Time tickDelta, std::shared_ptr<EventQueue> eventQueue) :		//tworzenie gameobjectow i przypisywanie im componentow
         State(tickDelta, eventQueue)
     {       
         auto Player = std::make_shared<GameObject<PlayerState>>();

@@ -2,7 +2,7 @@
 
 class State;
 
-class IStateStackable
+class IStateStackable	
 {
     public:
 	    virtual void pushState(std::shared_ptr<State> newState) = 0;

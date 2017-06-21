@@ -3,5 +3,20 @@ c:\users\siwiec\documents\visual studio 2015\projects\testsfml\gameobjects\playe
 c:\users\siwiec\documents\visual studio 2015\projects\testsfml\gameobjects\player.h(183): warning C4101: 'passedSecondFloor': unreferenced local variable
 c:\users\siwiec\documents\visual studio 2015\projects\testsfml\gameobjects\player.h(182): warning C4101: 'passedFirstFloor': unreferenced local variable
 c:\users\siwiec\documents\visual studio 2015\projects\testsfml\gameobjects\player.h(184): warning C4101: 'passedThirdFloor': unreferenced local variable
+  main.cpp
+c:\users\siwiec\documents\visual studio 2015\projects\testsfml\main.cpp(86): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Logic.cpp
+  GameObject.cpp
+  Collision.cpp
+c:\users\siwiec\documents\visual studio 2015\projects\testsfml\collision.cpp(67): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\siwiec\documents\visual studio 2015\projects\testsfml\collision.cpp(68): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\siwiec\documents\visual studio 2015\projects\testsfml\collision.cpp(70): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\siwiec\documents\visual studio 2015\projects\testsfml\collision.cpp(71): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\siwiec\documents\visual studio 2015\projects\testsfml\collision.cpp(133): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\siwiec\documents\visual studio 2015\projects\testsfml\collision.cpp(134): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\siwiec\documents\visual studio 2015\projects\testsfml\collision.cpp(135): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
 c:\users\siwiec\documents\visual studio 2015\projects\testsfml\gameobjects\enemyspawner.h(81): warning C4715: 'EnemySpawnerComponent::newEnemy': not all control paths return a value
+     Creating library C:\Users\Siwiec\Documents\Visual Studio 2015\Projects\testsfml\Debug\testsfml.lib and object C:\Users\Siwiec\Documents\Visual Studio 2015\Projects\testsfml\Debug\testsfml.exp
+sfml-main-d.lib(MainWin32.cpp.obj) : warning LNK4204: 'C:\Users\Siwiec\Documents\Visual Studio 2015\Projects\testsfml\Debug\vc140.pdb' is missing debugging information for referencing module; linking object as if no debug info
   testsfml.vcxproj -> C:\Users\Siwiec\Documents\Visual Studio 2015\Projects\testsfml\Debug\testsfml.exe

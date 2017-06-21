@@ -25,7 +25,7 @@ class EnemySpawnerInfoLabelComponent : public Component<EnemySpawnerState>
     public:
         EnemySpawnerInfoLabelComponent()
         {
-            if (!font.loadFromFile("Resources\\Space Comics.ttf")) {
+            if (!font.loadFromFile("Resources\\Space Comics.ttf")) {	// wyswietlanie poziomu trudnosci
                 throw new std::runtime_error("Couldn't load font");
             }
 
@@ -55,7 +55,7 @@ class EnemySpawnerComponent : public Component<EnemySpawnerState>
 
         std::shared_ptr<GameObject<EnemyState>> newEnemy()
         {
-			auto enemy = std::make_shared<GameObject<EnemyState>>();
+			auto enemy = std::make_shared<GameObject<EnemyState>>(); //losowanie przeciwnika
 			int random = (rand() % 6);
 			if (random == 0) {
 
@@ -97,8 +97,8 @@ class EnemySpawnerComponent : public Component<EnemySpawnerState>
                 spawnerState.lastSpawn = spawnerState.elapsed;
 
                 nextInterval = sf::seconds(randomDistribution(randomGenerator));
-
-                if (spawnerState.elapsed > sf::seconds(15 * static_cast<float>(spawnerState.gameSpeedScale))) {
+													
+                if (spawnerState.elapsed > sf::seconds(15 * static_cast<float>(spawnerState.gameSpeedScale))) {	// poziom trundosci
                     if (spawnerState.gameSpeedScale == 1) {
                         randomDistribution = std::uniform_real_distribution<float>(3, 6);
                         spawnerState.gameSpeedScale++;
