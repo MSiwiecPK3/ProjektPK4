@@ -1,0 +1,7 @@
+﻿  State.cpp
+c:\users\siwiec\documents\visual studio 2015\projects\testsfml\gameobjects\player.h(256): warning C4804: '<': unsafe use of type 'bool' in operation
+c:\users\siwiec\documents\visual studio 2015\projects\testsfml\gameobjects\player.h(183): warning C4101: 'passedSecondFloor': unreferenced local variable
+c:\users\siwiec\documents\visual studio 2015\projects\testsfml\gameobjects\player.h(182): warning C4101: 'passedFirstFloor': unreferenced local variable
+c:\users\siwiec\documents\visual studio 2015\projects\testsfml\gameobjects\player.h(184): warning C4101: 'passedThirdFloor': unreferenced local variable
+c:\users\siwiec\documents\visual studio 2015\projects\testsfml\gameobjects\enemyspawner.h(81): warning C4715: 'EnemySpawnerComponent::newEnemy': not all control paths return a value
+  testsfml.vcxproj -> C:\Users\Siwiec\Documents\Visual Studio 2015\Projects\testsfml\Debug\testsfml.exe
